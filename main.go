@@ -39,7 +39,7 @@ func main() {
 
 func getWeatherData(city string) WeatherResponse {
 	API_KEY := "your API_Key"
-    BASE_URL := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?appid=%s&q=%s", API_KEY, city)
+    	BASE_URL := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?appid=%s&q=%s", API_KEY, city)
 	response, err := http.Get(BASE_URL)
 	if err != nil {
 		log.Fatal(err)
